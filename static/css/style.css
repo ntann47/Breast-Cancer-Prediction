@@ -1,0 +1,56 @@
+html{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+
+}
+h1{
+  text-align: center; 
+  color: #36b8ec;
+}
+h2{
+  text-align: right;
+  color: hotpink;
+}
+.app{
+    width: 800px;
+    height: 650px;
+    margin: auto;
+    background-image: url(../images/background3.jpg);
+    background-position: center;
+    background-size:  cover;
+
+}
+.list-features{
+  list-style: none;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+.feature-item{
+  width: 70%;
+  margin: 5px auto;
+}
+.item-content{
+  width: 100%;
+  display: flex;
+}
+.lab{
+  width: 250px;
+  margin-right: 10px;
+  text-align: left;
+  font-weight: bold;
+  color:#e51515;
+}
+
+.result-continer{
+  width: 70%;
+  display: flex;
+  margin: 0 auto;
+}
+.result-label{
+  margin-right: 50px;
+}
+
+

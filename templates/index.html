@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>BTVN Tuần 08</title
+</head>
+<body>
+    <div class="app">
+        <h1>Breast Cancer Prediction</h1>
+        <div class="content">
+            <form action="/" class="p-3 text-center" method="post" enctype="multipart/form-data">
+                <ul class="list-features">
+                    <li class="feature-item">
+                        <div class="item-content">
+                            <label class="lab">                                                    
+                        
+Worst Concavity
+                            </label>        
+                             <input type="text" name="txt-concavity_worst" class="textbox">
+                        </div>
+                    </li>
+                    <li class="feature-item">
+                        <div class="item-content">
+                            <label class="lab">                      
+                                Mean of Concavity</label>        
+                             <input type="text" name="txt-concavity_mean" class="textbox">
+                        </div>
+                    </li>
+                    <li class="feature-item">
+                        <div class="item-content">
+                            <label class="lab">                   
+                                Area of Lobes (Diện tích thùy)</label>        
+                             <input type="text" name="txt-area_mean" class="textbox">
+                        </div>
+                    </li>
+                    <li class="feature-item">
+                        <div class="item-content">
+                            <label class="lab">                      
+                                
+                                Radius of Lobes (Bán kính thùy)</label>        
+                            <input type="text" name="txt-radius_mean" class="textbox">
+                        </div>
+
+                    </li>
+                    <li class="feature-item">
+                       
+                        <div class="item-content">
+                            <label class="lab">                      
+                            
+                               
+                                Worst Area</label>        
+                            <input type="text" name="txt-area_worst" class="textbox">
+                        </div>
+
+                    </li>
+                    <li class="feature-item">
+                        <div class="item-content">
+                            <label class="lab">                      
+                                
+Outer Perimeter of Lobes (Chu vi bên ngoài của các thùy)</label>        
+                            <input type="text" name="txt-perimeter_mean" class="textbox">
+                        </div>
+
+                    </li>
+
+                    <li class="feature-item">
+                        
+
+                        <div class="item-content">
+                            <label class="lab">                      
+                            
+                                Worst Radius</label>        
+                            <input type="text" name="txt-radius_worst" class="textbox">
+                        </div>
+                    </li>
+                    <li class="feature-item">
+                        <div class="item-content">
+                            <label class="lab">                      
+                                
+Mean of Cocave Points</label>        
+                             <input type="text" name="txt-concave_points_mean" class="textbox">
+                        </div>
+                    </li>
+                    <li class="feature-item">
+                        <div class="item-content">
+                            <label class="lab">                            
+                                Worst Permimeter</label>        
+                            <input type="text" name="txt-perimeter_worst" class="textbox">
+                        </div>
+                    </li>
+                    <li class="feature-item">
+                        <div class="item-content">
+                            <label class="lab">                      
+                               
+                                Worst Concave Points</label>        
+                             <input type="text" name="txt-concave_points_worst" class="textbox">
+                        </div>
+                    </li>
+                </ul>
+                <input type="submit" class="btn btn-primary mt-3" value="Predict">   
+            </form>
+            <div class="result-continer">
+                <h2 class="result-label">Result:</h2>
+                {% if predict %}
+                <h2 class="result"><p> {{predict}} </p></h2>
+	             {% endif %}
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</html>
